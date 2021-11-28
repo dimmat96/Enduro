@@ -19,6 +19,10 @@ const image = require('gulp-image');
 const { readFileSync } = require('fs');
 const concat = require('gulp-concat');
 
+// deploy
+var ghpages = require('gh-pages');
+ghpages.publish('app', function(err) {});
+
 let isProd = false; // dev by default
 
 const clean = () => {
