@@ -606,7 +606,6 @@ a {
 .footer {
   left: 0;
   top: 0;
-  padding-top: 40px;
   padding-bottom: 60px;
   flex-shrink: 0;
 }
@@ -639,7 +638,6 @@ a {
   display: inline-flex;
   align-items: center;
   margin: 0;
-  padding-left: 20px;
 }
 .social-item:not(:last-child) {
   margin-right: 11px;
@@ -2923,5 +2921,49 @@ Copyright (c) 2013 Daniel Eden
 .zoomOutUp {
   -webkit-animation-name: zoomOutUp;
   animation-name: zoomOutUp;
+}
+
+.repair {
+  left: 0;
+  top: 0;
+  padding: 50px 0;
+  color: var(--color-white);
+}
+.repair-title {
+  font: var(--high-bold);
+  font-size: 30px;
+  margin: 0;
+  padding-bottom: 90px;
+  text-align: center;
+}
+.repair-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: var(--middle-regular);
+  font-size: 24px;
+  line-height: 1.5;
+}
+@media (max-width: 768px) {
+  .repair-list {
+    flex-direction: column;
+  }
+}
+.repair-item {
+  text-align: center;
+}
+.repair-item:not(:last-child) {
+  padding-right: 60px;
+}
+@media (max-width: 768px) {
+  .repair-item:not(:last-child) {
+    padding-right: 0;
+  }
+}
+.repair-logo {
+  fill: var(--color-white);
+}
+.repair-descr {
+  margin: 0 auto;
 }
 /*# sourceMappingURL=main.css.map */
