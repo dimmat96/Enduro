@@ -1,0 +1,39 @@
+.repair {
+    left: 0;
+    top: 0;
+    padding: 50px 0;
+    color: var(--color-white);
+    &-title {
+        font: var(--high-bold);
+        font-size: 30px;
+        margin: 0;
+        padding-bottom: 90px;
+        text-align: center;
+    }
+    &-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font: var(--middle-regular);
+        font-size: 24px;
+        line-height: 1.5;
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
+    }
+    &-item {
+        text-align: center;
+    }
+    &-item:not(:last-child) {
+        padding-right: 60px;
+        @media (max-width: 768px) {
+            padding-right: 0;
+        }
+    }
+    &-logo {
+        fill: var(--color-white);
+    }
+    &-descr {
+        margin: 0 auto;   
+    }
+}
