@@ -1,1 +1,1 @@
-{"version":3,"sources":["global.js","ex.js","main.js"],"names":["console","log"],"mappings":"AAAA;;;ACAAA,OAAO,CAACC,GAAR,CAAY,UAAZ;ACAA","file":"main.js","sourcesContent":["","console.log('maxgraph');\r\n",""]}
+{"version":3,"sources":["global.js","ex.js","main.js"],"names":[],"mappings":"AAAA;ACAA;ACAA","file":"main.js","sourcesContent":["",null,""]}

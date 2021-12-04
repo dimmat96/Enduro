@@ -130,6 +130,11 @@ a {
   flex: 1 0 auto;
 }
 
+.swiper {
+  width: 600px;
+  height: 300px;
+}
+
 .header {
   left: 0;
   top: 0;
