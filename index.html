@@ -139,9 +139,9 @@
   <!-- Additional required wrapper -->
   <div class="swiper-wrapper">
     <!-- Slides -->
-    <div class="swiper-slide">Slider 1</div>
-    <div class="swiper-slide">Slider 2</div>
-    <div class="swiper-slide">Slider 3</div>
+    <div class="swiper-slide photo-slide"><img src="img/photo1.jpg" class="photo-img" alt=""></div>
+    <div class="swiper-slide photo-slide"><img src="img/photo2.jpg" class="photo-img" alt=""></div>
+
   </div>
 
   <!-- If we need navigation buttons -->
@@ -168,7 +168,7 @@
                 <img src="img/cfmoto.png" class="bikes-img" alt="">
                 <p class="bikes-descr">CFMOTO</p></li>
             </ul>
-            <div class="swiper">
+            <div class="swiper bikes-swiper">
               <!-- Additional required wrapper -->
               <div class="swiper-wrapper">
                 <!-- Slides -->
@@ -179,8 +179,8 @@
               </div>
             
               <!-- If we need navigation buttons -->
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev bikes-button"></div>
+              <div class="swiper-button-next bikes-button"></div>
             
             </div>
     </div>
@@ -252,6 +252,7 @@
     const photoSwiper = new Swiper('.swiper', {
   // Optional parameters
   direction: 'horizontal',
+  centeredSlides: true,
   loop: true,
 
   // Navigation arrows

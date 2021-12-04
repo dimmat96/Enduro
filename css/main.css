@@ -130,11 +130,6 @@ a {
   flex: 1 0 auto;
 }
 
-.swiper {
-  width: 600px;
-  height: 300px;
-}
-
 .header {
   left: 0;
   top: 0;
@@ -392,7 +387,6 @@ a {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 40px;
   max-height: 300px;
   transition: all 1s ease-out;
 }
@@ -421,6 +415,14 @@ a {
 .bikes-item {
   display: flex;
   flex-direction: column;
+}
+@media (min-width: 801px) {
+  .bikes-swiper {
+    display: none;
+  }
+}
+.bikes-button {
+  color: var(--color-pink);
 }
 
 .price {
@@ -480,6 +482,18 @@ a {
   padding: 5px;
 }
 
+.photo {
+  left: 0;
+  top: 0;
+  padding-bottom: 50px;
+  background-color: var(--color-white);
+}
+.photo-img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+}
 .footer {
   left: 0;
   top: 0;
