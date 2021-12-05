@@ -7,6 +7,10 @@
   <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="theme-color" content="#111111">
+  <meta property="og:title" content="Прокат мототехники в Курске">
+  <meta property="og:site_name" content="Эндуро46">
+  <meta property="og:url" content="https://www.enduro46.ru/">
+  <meta property="og:image" content="https://enduro46.ru/img/regulmoto.png">
   <title>Прокат мототехники в Курске</title>
   <link rel="stylesheet" href="css/vendor.css">
   <link rel="stylesheet" href="css/main.css">
@@ -23,6 +27,7 @@
     <div class="bg">
     @include('partials/price.html')
     </div>
+    @include('partials/photo.html')
     @include('partials/bikes.html')
     </div>
     <div class="bg">
@@ -33,12 +38,22 @@
   <script src="js/vendor.js"></script>
   <script src="js/main.js"></script>
   <script>new WOW().init();</script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const slider = new ChiefSlider('.slider', {
-        loop: false
-      });
-    });
+  <script type="module">
+    import Swiper from 'https://unpkg.com/swiper@7/swiper-bundle.esm.browser.min.js'
+
+    const photoSwiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  centeredSlides: true,
+  loop: true,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+});
   </script>
 </body>
 
